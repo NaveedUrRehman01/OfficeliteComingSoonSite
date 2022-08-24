@@ -1,0 +1,507 @@
+:root {
+    --bg-main-1: #fafafa;
+    --bg-main-2: #25293a;
+    --bg-card-1: #ffffff;
+    --bg-card-2: #5175ff;
+    --bg-btn-1: #5175ff;
+    --bg-btn-1--hover: #829cff;
+    --bg-btn-2: #5175ff26;
+    --bg-btn-2--hover: #829cff40;
+    --bg-btn-3: #ffffff;
+    --bg-countdown: #333950;
+    --bg-countdown--alt: #5175ff1a;
+    --font-main-1: #333950;
+    --font-main-2: #747b95;
+    --font-light: #ffffff;
+    --font-highlight: #5175ff;
+    --font-highlight--hover: #829cff;
+    --font-error: #f05b5b;
+    --border: #747b9580;
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .container{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    background-color: #fafafa;
+  }
+  .logo{
+    padding-bottom: 50px;
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .content{
+   
+    padding-top: 50px;
+  }
+  .content h1{
+    font-size: 2.5rem;
+    color: #25293a;
+    padding-bottom: 30px;
+  }
+  .content p{
+    line-height: 25px;
+    width: 70%;
+    font-size: 1.1rem;
+    color: var(--font-main-2);
+    padding-bottom: 20px;
+  }
+.getStarted{
+    color: #fafafa;
+    background-color: #5175ff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 120px;
+    font-weight: 700;
+    border: none;
+}
+.chart img{
+    height: 450px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.cards h4{
+    padding-top: 25px;
+}
+.basic , .ultimate{
+    width: 280px;
+    height: 350px;
+    background-color: #ffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.basic h1, .ultimate h1{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color:#25293a;
+}
+.user{
+    padding-bottom: 25px;
+}.basic p, .ultimate p{
+    padding-top: 10px;
+    color: rgb(174, 170, 170);
+}
+.pro p{
+    padding-top: 10px;
+    color: rgb(219, 214, 214);
+}
+.basic button, .ultimate button{    
+    color: #5175ff;
+    background-color: rgb(234, 230, 225);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 120px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.pro{
+    width: 280px;
+    height: 350px;
+    background-color: #829cff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.pro h1{
+
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color:#fff;
+}
+.pro button{
+    color: #5175ff;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 120px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.countDown{
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #25293a;
+    bottom: -500px;
+    left: 0%;
+}
+.counter h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: smaller;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding-top: 10px;
+}
+.boxes > div {
+    width: 70px;
+    height: 85px;
+    background-color:var(--bg-countdown);
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+   padding: 5px;
+   text-align: center;
+   border-radius: 5px;
+  
+}
+.boxes span{
+    font-size: small;
+    word-spacing: normal;
+    color: #747b95;
+    padding-bottom: 5px;
+}
+.started{
+    margin-top: 30px;
+}
+#event{
+    color: rgb(47, 68, 160);
+    
+}
+.boxes h4{
+    padding-top: 5px;
+}
+
+/* ipad resolution */
+
+/* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+@media screen and (max-width: 900px) and (min-width: 668px){
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 60px;
+        background-color: #fafafa;
+      }
+   
+      .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    .basic , .ultimate{
+        width: 100%;
+        height: 350px;
+        background-color: #ffff;
+        border-radius: 10px;
+        text-align: start;
+        padding: 20px;
+        position: relative;
+    }
+    .pro{
+        width: 100%;
+        height: 350px;
+        background-color: #829cff;
+        border-radius: 10px;
+        text-align: start;
+        padding: 20px;
+        position: relative;
+    }
+   
+    .cards h4{
+        font-size: 25px;
+    }
+    .cards h1{
+        font-size: 50px;
+    }
+    .special{
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        padding: 20px;
+        font-size: larger;
+        
+    }
+    .basic button, .ultimate button{    
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        width: 170px;
+        font-weight: 700;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .pro button{
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        width: 170px;
+        font-weight: 700;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .countDown{
+        padding-top: 500px;
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 1100px;
+        background-color: #25293a;
+        top: 1210px;
+        left: 0%;
+    }
+    .counter{
+        padding-top: 200px;
+        text-align: center;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        gap: 1px;
+        padding-top: 10px;
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .boxes > div {
+        width: 110px;
+        height: 130px;
+        background-color:var(--bg-countdown);
+        font-size: xx-large;
+        font-weight: bold;
+        color: #fff;
+       padding: 5px;
+       text-align: center;
+       border-radius: 5px;
+    
+    }
+    .boxes span{
+        font-size: large;
+        word-spacing: normal;
+        color: #747b95;
+        padding-bottom: 5px;
+    }
+    .started{
+        margin-top: 30px;
+        text-align: center;
+    }
+     .started .getStarted{
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        width: 170px;
+        font-weight: 700;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+     }
+     #counter h3{
+        font-size: 25px;
+        padding-bottom: 10px;
+     }
+    #event{
+        color: rgb(47, 68, 160);
+        font-size: 25px;
+    }
+    .boxes h4{
+        padding-top: 5px;
+        font-size: 50px;
+    }
+
+  }
+  @media screen and (max-width: 667px) and (min-width: 400px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        margin: 0%;
+    }
+    .logo{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5px;
+        margin: 0%;
+    }
+    .chart img{
+        width: 90%;
+        height: 300px;
+    }
+    .content {
+        text-align: center;
+    }
+    .content p, button {
+        padding: 10px;
+        margin: 0%;
+        text-align: center;
+        width: 100%;
+    }
+    .getStarted{
+        padding: 15px;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        margin: 0%;
+        
+    }
+    .ultimate{
+        position: relative;
+    }
+    .basic , .ultimate , .pro{
+        width: 100%;
+        height: 400px;
+    }
+    .countDown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% ;
+        position: absolute;
+        bottom: -1500px;
+        height: auto;
+    }
+    .counter{
+        margin-top: 550px;
+    }
+    .counter h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .boxes , .started{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        margin: 0%;
+    }
+
+  }
+  @media screen and (max-width: 399px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        margin: 0%;
+    }
+    .logo{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5px;
+        margin: 0%;
+    }
+    .chart img{
+        width: 90%;
+        height: 300px;
+    }
+    .content {
+        text-align: center;
+    }
+    .content p, button {
+        padding: 10px;
+        margin: 0%;
+        text-align: center;
+        width: 100%;
+    }
+    .getStarted{
+        padding: 15px;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        margin: 0%;
+        
+    }
+    .ultimate{
+        position: relative;
+    }
+    .basic , .ultimate , .pro{
+        width: 100%;
+        height: 400px;
+    }
+    .countDown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% ;
+        position: absolute;
+        bottom: -1650px;
+        height: auto;
+    }
+    .counter{
+        margin-top: 650px;
+    }
+    .counter h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .boxes , .started{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        margin: 0%;
+    }
+  }
